@@ -1,0 +1,61 @@
+$white: hsl(0, 0%, 100%);
+$lightgray: hsl(212, 45%, 89%);
+$grayishblue: hsl(220, 15%, 55%);
+$darkblue: hsl(218, 44%, 22%);
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $lightgray;
+    font-family: 'Outfit', sans-serif;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    .card {
+        max-width: 300px;
+        margin: auto;
+        background-color: $white;
+        border-radius: 1rem;
+        padding: 1rem 1rem 2rem 1rem;
+        text-align: center;
+        .qr-code {
+            margin-bottom: 1.5rem;
+            img {
+                border-radius: .5rem;
+            }
+        }
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $darkblue;
+            margin-bottom: .8rem;
+        }
+        p {
+            font-size: 15px;
+            color: $grayishblue;
+        }
+    }
+}
+.attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: $grayishblue;
+    a {
+        color: $grayishblue;
+        &:hover {
+            color: $darkblue;
+        }
+    }
+}
